@@ -32,7 +32,6 @@ fun DownloaderSettingsRoute(
     onBackPressed: () -> Unit,
     viewModel: DownloaderSettingsViewModel = koinViewModel(),
 ) {
-    val writeExternalStoragePermissionState = downloaderPermissionState()
     val enableDownloader by viewModel.enableDownloader.collectAsStateWithLifecycle()
     val contentSet = remember(enableDownloader) { enableDownloader.toEnabledContentSet() }
 
@@ -43,13 +42,7 @@ fun DownloaderSettingsRoute(
         item(key = R.string.enable_downloader, contentType = ContentType.SingleGroupItem) {
             SwitchListItem(
                 checked = enableDownloader,
-                onCheckedChange = {
-                    requestDownloadPermission(
-                        writeExternalStoragePermissionState,
-                        { viewModel.enableDownloader.update(it) },
-                        it
-                    )
-                },
+                onCheckedChange = { viewModel.enableDownloader.update(it) },
                 position = ContentPosition.Trailing,
                 headlineContent = textContent(R.string.enable_downloader),
                 supportingContent = annotatedStringResource(R.string.enable_downloader_explainer),
