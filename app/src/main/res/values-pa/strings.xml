@@ -74,7 +74,7 @@
     <string name="show_linksheet_referrer">ਲਿੰਕਸ਼ੀਟ ਰੈਫਰਰ ਦਿਖਾਓ</string>
     <string name="url_copied">URL ਨੂੰ ਕਲਿੱਪਬੋਰਡ ਵਿੱਚ ਕਾਪੀ ਕੀਤਾ ਗਿਆ</string>
     <string name="copy_url">URL ਕਾਪੀ ਕਰੋ</string>
-    <string name="resolve_failed">%s ਅਸਫਲ: %s</string>
+    <string name="resolve_failed">%1$s ਅਸਫਲ: %2$s</string>
     <string name="none">ਕੋਈ ਵੀ ਨਹੀਂ</string>
     <string name="export">ਐਕਸਪੋਰਟ ਕਰੋ</string>
     <string name="hide_after_copying">ਕਾਪੀ ਕਰਨ ਤੋਂ ਬਾਅਦ ਓਹਲੇ ਕਰੋ</string>
@@ -142,7 +142,7 @@
     <string name="open_link_with" translatable="false">OpenLinkWith</string>
     <string name="select_an_app">ਇੱਕ ਐਪ ਚੁਣੋ</string>
     <string name="github_workflow_run_id">ਬਿਲਡ ਵਰਕਫਲੋ ਆਈਡੀ:</string>
-    <string name="resolved_via">%s ਨੂੰ %s ਰਾਹੀਂ ਰਿਜ਼ੌਲਵ ਕੀਤਾ</string>
+    <string name="resolved_via">%1$s ਨੂੰ %2$s ਰਾਹੀਂ ਰਿਜ਼ੌਲਵ ਕੀਤਾ</string>
     <string name="instance_not_available_anymore">ਇੰਸਟੈਂਸ ਹੁਣ ਉਪਲਬਧ ਨਹੀਂ ਹੈ!</string>
     <string name="open_with_linksheet">ਲਿੰਕਸ਼ੀਟ ਨਾਲ ਖੋਲ੍ਹੋ</string>
     <string name="in_app_browser">ਇਨ-ਐਪ ਬ੍ਰਾਊਜ਼ਰ</string>

@@ -53,7 +53,7 @@
     <string name="request_timeout_explainer">Xác định số giây LinkSheet sẽ đợi để thiết lập kết nối. Đặt giá trị này thành 0 sẽ tắt thời gian chờ nhưng điều này không được khuyến khích.</string>
     <string name="url_copied">URL đã được sao chép vào clipboard</string>
     <string name="copy_url">Sao chép liên kết</string>
-    <string name="resolve_failed">%s thất bại: %s</string>
+    <string name="resolve_failed">%1$s thất bại: %2$s</string>
     <string name="none">Không có</string>
     <string name="export">Xuất</string>
     <string name="hide_after_copying">Tự động ẩn khi hành động</string>
@@ -108,7 +108,7 @@
     <string name="open_link_with" translatable="false">OpenLinkWith</string>
     <string name="select_an_app">Chọn một ứng dụng</string>
     <string name="github_workflow_run_id"><b>ID quy trình làm việc:</b> <font face="monospace">%s</font></string>
-    <string name="resolved_via">%s giải quyết qua %s</string>
+    <string name="resolved_via">%1$s giải quyết qua %2$s</string>
     <string name="open_with_linksheet">Mở bằng LinkSheet</string>
     <string name="in_app_browser">Trình duyệt trong ứng dụng</string>
     <string name="links">Liên kết</string>

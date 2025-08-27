@@ -64,7 +64,7 @@
     <string name="no_apps_found">Keine Apps gefunden.</string>
     <string name="normal">Normal</string>
     <string name="request_timeout_explainer">Definiert, wie viele Sekunden LinkSheet für die Herstellung einer Verbindung warten wird. Der Wert 0 deaktiviert die Zeitüberschreitung, dies wird aber nicht empfohlen.</string>
-    <string name="resolve_failed">%s fehlgeschlagen: %s</string>
+    <string name="resolve_failed">%1$s fehlgeschlagen: %2$s</string>
     <string name="export">Exportieren</string>
     <string name="no_browsers_found">Keine Browser gefunden.</string>
     <string name="export_log">Protokoll exportieren</string>
@@ -178,7 +178,7 @@
     <string name="open_link_with" translatable="false">OpenLinkWith</string>
     <string name="select_an_app">App auswählen</string>
     <string name="github_workflow_run_id">Build-Workflow-ID:</string>
-    <string name="resolved_via">%s aufgelöst über %s</string>
+    <string name="resolved_via">%1$s aufgelöst über %2$s</string>
     <string name="instance_not_available_anymore">Instanz ist nicht mehr verfügbar!</string>
     <string name="donate_crypto">Mit Krypto spenden</string>
     <string name="follow_redirects_explainer">Automatisch allen Weiterleitungen folgen, bevor das untere Fenster geöffnet wird. Dies kann <annotation url-id="privacy-follow-redirects">Auswirkungen auf die Privatsphäre</annotation> haben</string>

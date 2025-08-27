@@ -105,7 +105,7 @@
     <string name="light">Светла</string>
     <string name="dark">Тъмна</string>
     <string name="fastfoward_rules">Използване на правила на FastForward</string>
-    <string name="resolved_via">%s получено от %s</string>
+    <string name="resolved_via">%1$s получено от %2$s</string>
     <string name="instance">Екземпляр</string>
     <string name="add">Добавяне</string>
     <string name="in_app_browser">Вграден в приложението браузър</string>
@@ -176,7 +176,7 @@
     <string name="advanced">Разширени</string>
     <string name="shizuku_explainer_short">Директно взаимодейства със системните ППИ</string>
     <string name="mastodon_redirect">MastodonRedirect</string>
-    <string name="resolve_failed">%s е неуспешно: %s</string>
+    <string name="resolve_failed">%1$s е неуспешно: %2$s</string>
     <string name="pretend_to_be_app">Прехващане на заявки от приложения</string>
     <string name="configure">Настройки</string>
     <string name="general">Разни</string>

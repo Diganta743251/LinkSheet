@@ -133,7 +133,7 @@
     <string name="follow_redirects_short">リダイレクト</string>
     <string name="unknown_host">%s はブロックされているか存在しません</string>
     <string name="fastfoward_rules_explainer">実験的な <annotation url-id="fastforward-github">FastForward</annotation> ルールの統合を使用する (リンクからリダイレクトを抽出することで、一部のウェブサイトのリダイレクトをバイパスする)</string>
-    <string name="resolved_via">%s は %s 経由で解決されました</string>
+    <string name="resolved_via">%1$s は %2$s 経由で解決されました</string>
     <string name="dont_show_filtered_item_explainer">最後に使用したアプリを提案する上部の項目を表示しない</string>
     <string name="downloader_url_mime_type_explainer">URLの末尾にファイル拡張子（例：\".jpg\"）があるかどうかをチェックします。拡張子がある場合は、ダウンロードしたファイルにこのタイプが使われます。</string>
     <string name="disable_in_selected">強制無効化…</string>
@@ -247,7 +247,7 @@
     <string name="no_libredirect_services">LibRedirectのサービスは見つかりませんでした！</string>
     <string name="download_started">ダウンロードが開始されました</string>
     <string name="request_timeout">リクエストタイムアウト</string>
-    <string name="resolve_failed">%s 失敗: %s</string>
+    <string name="resolve_failed">%1$s 失敗: %2$s</string>
     <string name="export_log">ログをエクスポート</string>
     <string name="include_settings">設定を含める（推奨）</string>
     <string name="include_fingerprint">デバイスのフィンガープリントを含める（推奨）</string>

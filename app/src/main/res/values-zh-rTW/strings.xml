@@ -252,7 +252,7 @@
     <string name="amp2html_local_cache">啟用本機 Amp2Html 快取</string>
     <string name="select_app">選取應用程式</string>
     <string name="settings_shortcuts__subtitle_default_browser">前往「預設瀏覽器應用程式」設定頁面</string>
-    <string name="resolved_via">已解析 %s (透過 %s)</string>
+    <string name="resolved_via">已解析 %1$s (透過 %2$s)</string>
     <string name="home__clipboard_card_source">來自剪貼簿</string>
     <string name="resolve_event__idle">閒置中</string>
     <string name="onboarding_1_card_title">預設瀏覽器</string>

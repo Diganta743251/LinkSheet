@@ -38,7 +38,7 @@
     <string name="follow_redirects_external_service">Následovat přesměrování skrze externí službu</string>
     <string name="follow_redirects_local_cache">Povolit místní mezipaměť přesměrování</string>
     <string name="follow_redirects_local_cache_explainer">Lokálně ukládat výsledné adresy přesměrování</string>
-    <string name="resolved_via">%s vyřešeno pomocí %s</string>
+    <string name="resolved_via">%1$s vyřešeno pomocí %2$s</string>
     <string name="redirect_resolve_type_local">místního překladače</string>
     <string name="lib_redirect">LibRedirect</string>
     <string name="instance">Instance</string>
@@ -140,7 +140,7 @@
     <string name="donate_explainer_crypto">Při přispívání kryptoměnou pošlete e-mail na adresu <annotation url="mailto:1fexd@420blaze.it">1fexd@420blaze.it</annotation>.</string>
     <string name="download_started">Stahování spuštěno</string>
     <string name="request_timeout_explainer">Určuje, kolik sekund bude aplikace LinkSheet čekat na navázání spojení. Nastavením na 0 se časový limit vypne, to ale nedoporučujeme.</string>
-    <string name="resolve_failed">%s selhalo: %s</string>
+    <string name="resolve_failed">%1$s selhalo: %2$s</string>
     <string name="discord">Discord</string>
     <string name="join">Připojit se</string>
     <string name="misc_settings">Různé</string>

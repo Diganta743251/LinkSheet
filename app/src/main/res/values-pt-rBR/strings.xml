@@ -100,7 +100,7 @@
     <string name="fastfoward_rules_explainer">Usar a integração experimental <annotation url-id="fastforward-github">FastForward</annotation> (ignore os redirecionamentos de alguns hosts extraindo o redirecionamento do link)</string>
     <string name="follow_redirects_local_cache">Ativar o cache de redirecionamento local</string>
     <string name="follow_redirects_local_cache_explainer">Armazenar em cache o resultado dos redirecionamentos localmente</string>
-    <string name="resolved_via">%s resolvido via %s</string>
+    <string name="resolved_via">%1$s resolvido via %2$s</string>
     <string name="dont_show_filtered_item">Não mostre a seção \"último app escolhido\"</string>
     <string name="dont_show_filtered_item_explainer">Não mostrar a seção superior que sugere o último aplicativo usado para o host clicado</string>
     <string name="preview_url_explainer">Mostra o URL clicado (após ter sido processado)</string>
@@ -158,7 +158,7 @@
     <string name="log_files">Sessões anteriores</string>
     <string name="services">Serviços</string>
     <string name="current_session">Sessão atual</string>
-    <string name="resolve_failed">%s falhou: %s</string>
+    <string name="resolve_failed">%1$s falhou: %2$s</string>
     <string name="no_apps_found">Nenhum app foi encontrado.</string>
     <string name="enable_request_private_browsing_button">Ativar o botão \"Solicitar navegação privada\"</string>
     <string name="enable_request_private_browsing_button_explainer">Exibe um botão ao lado dos navegadores que abre o URL clicado no modo de navegação privada. Navegadores compatíveis: %s</string>

@@ -96,7 +96,7 @@
     <string name="follow_only_known_trackers">Segui solo i tracker noti</string>
     <string name="amp2html">Amp2Html</string>
     <string name="loading_link">Caricamento link…</string>
-    <string name="resolved_via">%s risolto tramite %s</string>
+    <string name="resolved_via">%1$s risolto tramite %2$s</string>
     <string name="redirect_resolve_type_remote">server remoto</string>
     <string name="redirect_resolve_type_local">risolutore locale</string>
     <string name="normal">Normale</string>
@@ -164,7 +164,7 @@
     <string name="logs_explainer">Consulta i log</string>
     <string name="log_viewer">Visualizzatore log</string>
     <string name="no_log_entries">Non ci sono log riferiti a questa sessione.</string>
-    <string name="resolve_failed">%s fallito: %s</string>
+    <string name="resolve_failed">%1$s fallito: %2$s</string>
     <string name="disable_all">Disabilita tutto</string>
     <string name="app_browsers_subtitle">App preferite, impostazioni del browser</string>
     <string name="include_fingerprint">Includi il fingerprint o identificatore univoco del dispositivo ﹙consigliato﹚</string>
