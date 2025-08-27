@@ -311,6 +311,8 @@ dependencies {
     implementation(AndroidX.browser)
     implementation(AndroidX.work.runtimeKtx)
     testImplementation(AndroidX.work.testing)
+    
+    implementation("com.android.billingclient:billing:_")
 
     implementation(AndroidX.room.runtime)
     implementation(AndroidX.room.ktx)

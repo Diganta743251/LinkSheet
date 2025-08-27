@@ -98,6 +98,12 @@
     <string name="frontend">Frontend</string>
     <string name="instance">Instance</string>
     <string name="add">Add</string>
+    <string name="attribution">Based on LinkSheet by Diganta Tarafder\nOriginal: github.com/link-sheet/link-sheet\nLicensed under MIT</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="privacy_policy_explainer">What we collect and how we protect your data</string>
+    <string name="history_export_file_name">linkmaster_history_%s.json</string>
+    <string name="url_preview">URL preview image</string>
+    <string name="favicon">Website favicon</string>
     <string name="select_an_app">Select an app</string>
     <string name="close">Close</string>
     <string name="dont_show_filtered_item">Don\'t show \"last picked app\" section</string>

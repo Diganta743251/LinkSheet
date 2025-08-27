@@ -1,0 +1,165 @@
+# LinkMaster Play Console Compliance Checklist
+
+## ✅ Critical Path Verification
+
+### Permissions & Security
+- [x] QUERY_ALL_PACKAGES permission removed
+- [x] SYSTEM_ALERT_WINDOW permission removed  
+- [x] WRITE_EXTERNAL_STORAGE permission removed
+- [x] Only necessary permissions retained (INTERNET, ACCESS_NETWORK_STATE, etc.)
+
+### Attribution & Licensing
+- [x] LinkSheet attribution added to About screen
+- [x] Original author (Diganta Tarafder) credited
+- [x] MIT license properly referenced
+- [x] GitHub repository link provided
+
+### Privacy Policy
+- [x] Privacy policy implemented in app
+- [x] AdMob usage clearly disclosed
+- [x] No data collection statement included
+- [x] Storage Access Framework usage explained
+- [x] Pro version offline operation documented
+
+### AdMob Safety
+- [x] AdManager utility implemented
+- [x] Internet connectivity check before showing ads
+- [x] Pro version ad-free guarantee
+- [x] Google privacy policy compliance
+
+## ✅ Technical Compliance
+
+### Target SDK & APIs
+- [x] Target SDK 34 (Android 14)
+- [x] Material 3 design system implemented
+- [x] Edge-to-edge display enabled
+- [x] Modern Android APIs used
+
+### Storage Access
+- [x] Storage Access Framework implemented
+- [x] HistoryExporter utility created
+- [x] No dangerous storage permissions
+- [x] User-initiated file operations only
+
+### Play Billing
+- [x] Play Billing v6 implemented
+- [x] BillingManager utility created
+- [x] Pro purchase flow ready
+- [x] Purchase state management
+
+### Foreground Services
+- [x] InterconnectService properly configured
+- [x] foregroundServiceType="specialUse" set
+- [x] Binder Transactions subtype declared
+- [x] Play Console declaration prepared
+
+### Accessibility
+- [x] Content descriptions added for images
+- [x] URL preview accessibility improved
+- [x] Favicon accessibility added
+- [x] Privacy policy icon described
+
+## ✅ Play Console Declarations
+
+### Foreground Service Declaration
+"Uses FOREGROUND_SERVICE for inter-process communication (Binder Transactions). Required for LinkMaster's core functionality of handling link intents from other apps."
+
+### Permission Declarations
+- INTERNET: "Used only for AdMob ads in the free version. Pro version operates completely offline."
+- ACCESS_NETWORK_STATE: "Used to check network connectivity before showing AdMob ads."
+- FOREGROUND_SERVICE: "Required for InterconnectService to handle link intents from other applications."
+- POST_NOTIFICATIONS: "Used for app notifications and user feedback. No marketing content."
+
+### Data Collection Declaration
+"LinkMaster does not collect, transmit, or store any user data. All link history is stored locally on the device."
+
+### AdMob Declaration
+"AdMob is used only in the free version for monetization. Pro version is completely ad-free and operates offline."
+
+### Fork Attribution Declaration
+"LinkMaster is based on LinkSheet by Diganta Tarafder (github.com/link-sheet/link-sheet) and is licensed under MIT."
+
+## ✅ Pre-Launch Report Checklist
+
+### Policy Compliance
+- [ ] No dangerous permissions detected
+- [ ] Privacy policy accessible in app
+- [ ] Attribution properly displayed
+- [ ] AdMob usage compliant
+- [ ] No data collection violations
+
+### Technical Quality
+- [ ] Target SDK 34 compliance
+- [ ] Material 3 design implementation
+- [ ] Accessibility standards met
+- [ ] Storage Access Framework usage
+- [ ] Foreground service declarations
+
+### User Experience
+- [ ] Edge-to-edge display working
+- [ ] Accessibility features functional
+- [ ] Privacy policy easily accessible
+- [ ] Attribution clearly visible
+- [ ] Pro purchase flow working
+
+## 🚀 Launch Readiness
+
+### Final Verification Commands
+```bash
+# Verify dangerous permissions removed
+grep -r 'QUERY_ALL_PACKAGES\|SYSTEM_ALERT_WINDOW\|WRITE_EXTERNAL_STORAGE' app/src/main/AndroidManifest.xml
+
+# Verify attribution in place
+grep 'Diganta Tarafder' app/src/main/res/values/strings.xml
+
+# Verify privacy policy exists
+ls app/src/main/res/raw/privacy.html
+
+# Verify AdMob safety check
+grep 'isOnline()' app/src/main/java/fe/linksheet/util/AdManager.kt
+
+# Verify Play Billing v6
+grep 'billing:6.1.0' versions.properties
+
+# Verify Material 3
+grep 'Theme.Material3' app/src/main/res/values/themes.xml
+```
+
+### Expected Results
+- All grep commands should return empty or expected content
+- No dangerous permissions found
+- Attribution string present
+- Privacy policy file exists
+- AdMob safety check implemented
+- Play Billing v6 dependency present
+- Material 3 theme configured
+
+## 📋 Play Console Upload Checklist
+
+1. **App Bundle**: Generate clean release bundle
+2. **Release Notes**: Prepare version 1.0.0 release notes
+3. **Screenshots**: Update with Material 3 design
+4. **Content Rating**: Complete content rating questionnaire
+5. **Privacy Policy**: Upload privacy policy URL
+6. **Data Safety**: Complete data safety section
+7. **Target Audience**: Set appropriate age range
+8. **Content**: Review all app content for compliance
+9. **Declarations**: Submit all required declarations
+10. **Review**: Submit for Play Console review
+
+## 🎯 Success Criteria
+
+- [ ] App passes pre-launch report with 0 policy violations
+- [ ] All dangerous permissions removed and verified
+- [ ] Privacy policy accessible and compliant
+- [ ] Attribution properly displayed
+- [ ] AdMob usage follows Google guidelines
+- [ ] Target SDK 34 compliance confirmed
+- [ ] Material 3 design implemented
+- [ ] Accessibility standards met
+- [ ] Play Console declarations submitted
+- [ ] App ready for production release
+
+---
+*Last updated: January 2025*
+*LinkMaster v1.0.0 - Play Store Ready*
