@@ -83,7 +83,7 @@
     <string name="fastfoward_rules_explainer">Deneysel <annotation url-id="fastforward-github">FastForward</annotation> kural entegrasyonunu kullanın (bağlantıdan yönlendirmeyi çıkararak bazı ana bilgisayarların yönlendirmelerini atlatın)</string>
     <string name="follow_redirects_local_cache">Yerel yönlendirme önbelleğini etkinleştir</string>
     <string name="follow_redirects_local_cache_explainer">Yönlendirmelerin sonucunu yerel olarak önbelleğe al</string>
-    <string name="resolved_via">%s %s aracılığıyla çözüldü</string>
+    <string name="resolved_via">%1$s %2$s aracılığıyla çözümlendi</string>
     <string name="redirect_resolve_type_remote">uzak sunucu</string>
     <string name="redirect_resolve_type_local">yerel çözücü</string>
     <string name="enable_libredirect">LibRedirect\'i etkinleştir</string>
@@ -117,7 +117,7 @@
     <string name="no_log_entries">Bu oturum herhangi bir günlük içermiyor.</string>
     <string name="download_started">İndirme başladı</string>
     <string name="request_timeout">İstek zaman aşımı</string>
-    <string name="resolve_failed">%s başarısız oldu: %s</string>
+    <string name="resolve_failed">%1$s başarısız oldu: %2$s</string>
     <string name="request_timeout_explainer">LinkSheet\'in bir bağlantının kurulması için kaç saniye bekleyeceğini belirler. Bunu 0 yapmak zaman aşımını devre dışı bırakır, ancak bu önerilmez.</string>
     <string name="no_browsers_found">Tarayıcı bulunamadı.</string>
     <string name="export">Dışa aktar</string>

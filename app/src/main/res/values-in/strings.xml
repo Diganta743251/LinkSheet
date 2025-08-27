@@ -87,7 +87,7 @@
     <string name="fastfoward_rules">Gunakan aturan FastForward</string>
     <string name="follow_redirects_local_cache">Aktifkan singgahan (cache) pengalihan lokal</string>
     <string name="follow_redirects_local_cache_explainer">Singgahkan (cache) hasil pengalihan secara lokal</string>
-    <string name="resolved_via">%s diselesaikan melalui %s</string>
+    <string name="resolved_via">%1$s diselesaikan melalui %2$s</string>
     <string name="redirect_resolve_type_remote">peladen jarak jauh</string>
     <string name="redirect_resolve_type_local">penyelesai lokal</string>
     <string name="enable_libredirect">Aktifkan LibRedirect</string>
@@ -148,7 +148,7 @@
     <string name="log_viewer">Penampil log</string>
     <string name="request_timeout">Batas waktu permintaan</string>
     <string name="request_timeout_explainer">Menentukan berapa detik LinkSheet akan menunggu hingga koneksi terbentuk. Menyetel nilainya ke 0 akan menonaktifkan batas waktu, tetapi ini tidak direkomendasikan.</string>
-    <string name="resolve_failed">%s gagal: %s</string>
+    <string name="resolve_failed">%1$s gagal: %2$s</string>
     <string name="no_browsers_found">Tidak ditemukan peramban yang ada.</string>
     <string name="no_apps_found">Tidak ditemukan aplikasi yang ada.</string>
     <string name="export">Ekspor</string>

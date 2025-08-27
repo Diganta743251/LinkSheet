@@ -125,7 +125,7 @@
     <string name="no_log_entries">Cette session ne contient aucun journal.</string>
     <string name="download_started">Téléchargement démarré</string>
     <string name="request_timeout">Délai de requête</string>
-    <string name="resolve_failed">%s échoué : %s</string>
+    <string name="resolve_failed">%1$s échoué : %2$s</string>
     <string name="no_browsers_found">Aucun navigateur n\'a été trouvé.</string>
     <string name="no_apps_found">Aucune application trouvée.</string>
     <string name="export">Exporter</string>
@@ -157,7 +157,7 @@
     <string name="fastfoward_rules">Utiliser les règles FastForward</string>
     <string name="follow_redirects_local_cache">Activer le cache de redirection local</string>
     <string name="follow_redirects_local_cache_explainer">Mettre en cache localement le résultat des redirections</string>
-    <string name="resolved_via">%s résolu via %s</string>
+    <string name="resolved_via">%1$s résolu via %2$s</string>
     <string name="preview_url">Aperçu de l\'url</string>
     <string name="preview_url_explainer">Affiche l\'url cliquée (une fois qu\'elle a été traitée)</string>
     <string name="amp2html_local_cache">Activer le cache local Amp2Html</string>

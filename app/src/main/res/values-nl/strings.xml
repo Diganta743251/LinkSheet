@@ -43,7 +43,7 @@
     <string name="system">Systeeminstelling volgen</string>
     <string name="follow_redirects_local_cache">Lokale omleidingscache inschakelen</string>
     <string name="follow_redirects_local_cache_explainer">Sla de resultaten van omleidingen lokaal op</string>
-    <string name="resolved_via">%s verwerkt via %s</string>
+    <string name="resolved_via">%1$s verwerkt via %2$s</string>
     <string name="redirect_resolve_type_local">lokale verwerker</string>
     <string name="instance">Server</string>
     <string name="add">Toevoegen</string>
@@ -56,7 +56,7 @@
     <string name="debug_explainer">App-logs, geverifieerde linkverwerkers resetten</string>
     <string name="no_libredirect_services">Geen LibRedirect-diensten gevonden!</string>
     <string name="request_timeout">Time-out verbindingen</string>
-    <string name="resolve_failed">%s mislukt: %s</string>
+    <string name="resolve_failed">%1$s mislukt: %2$s</string>
     <string name="redact_log">Gevoelige informatie afschermen (aanbevolen, uitschakelen kan pakketnamen en hostnamen lekken)</string>
     <string name="copy_to_clipboard">Naar klembord kopiëren</string>
     <string name="generic__button_text_copy_clipboard">Naar klembord kopiëren</string>

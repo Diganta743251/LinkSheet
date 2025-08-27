@@ -153,7 +153,7 @@
     <string name="success">成功</string>
     <string name="request_timeout_explainer">定义 LinkSheet 等待建立连接的秒数。将此设置为 0 将禁用超时（不建议）。</string>
     <string name="configure">配置</string>
-    <string name="resolve_failed">%s 失败：%s</string>
+    <string name="resolve_failed">%1$s 失败：%2$s</string>
     <string name="export">导出</string>
     <string name="no_browsers_found">未找到浏览器。</string>
     <string name="export_log">导出日志</string>
@@ -186,7 +186,7 @@
     <string name="dev">开发者</string>
     <string name="request_private_browsing">隐私</string>
     <string name="import_explainer">从文件导入以前的导出</string>
-    <string name="resolved_via">%s 由%s 解析</string>
+    <string name="resolved_via">%1$s 由 %2$s 解析</string>
     <string name="instance_not_available_anymore">实例已经不再可用！</string>
     <string name="shizuku_integration_not_setup_explainer">LinkSheet 可在不使用 Shizuku 的情况下工作，但仍然建议使用 Shizuku。点击此处安装。</string>
     <string name="export_import_settings_explainer">导出当前设置或导入以前导出的设置</string>

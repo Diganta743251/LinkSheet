@@ -74,7 +74,7 @@
     <string name="show_linksheet_referrer">Mostrar referencias de LinkSheet</string>
     <string name="url_copied">Enlace copiado al portapapeles</string>
     <string name="copy_url">Copiar enlace</string>
-    <string name="resolve_failed">%s fallido: %s</string>
+    <string name="resolve_failed">%1$s fallido: %2$s</string>
     <string name="none">Ninguno</string>
     <string name="export">Exportar</string>
     <string name="hide_after_copying">Ocultar automáticamente después de una acción</string>
@@ -142,7 +142,7 @@
     <string name="open_link_with" translatable="false">OpenLinkWith</string>
     <string name="select_an_app">Seleccionar una aplicación</string>
     <string name="github_workflow_run_id"><b>ID de flujo de trabajo:</b> <font face="monospace">%s</font></string>
-    <string name="resolved_via">%s vía resuelta %s</string>
+    <string name="resolved_via">%1$s vía resuelta %2$s</string>
     <string name="instance_not_available_anymore">¡Esta instancia ya no está disponible!</string>
     <string name="open_with_linksheet">Abrir con LinkSheet</string>
     <string name="in_app_browser">Navegador en aplicación</string>
