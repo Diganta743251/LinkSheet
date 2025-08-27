@@ -272,7 +272,6 @@ dependencies {
     implementation(project(":config"))
     implementation(project(":util"))
 
-    implementation(project(":bottom-sheet"))
     implementation(project(":bottom-sheet-new"))
     implementation(project(":scaffold"))
     implementation(project(":test-fake"))
