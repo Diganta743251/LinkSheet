@@ -11,6 +11,7 @@ import fe.linksheet.composable.page.home.HomePageRoute
 import fe.linksheet.composable.page.settings.SettingsRoute
 import fe.linksheet.composable.page.settings.about.DonateSettingsRoute
 import fe.linksheet.composable.page.settings.about.AboutSettingsRoute
+import fe.linksheet.composable.page.settings.about.PrivacyPolicyRoute
 import fe.linksheet.composable.page.settings.about.CreditsSettingsRoute
 import fe.linksheet.composable.page.settings.about.VersionSettingsRoute
 import fe.linksheet.composable.page.settings.advanced.*
@@ -63,6 +64,7 @@ import fe.linksheet.navigation.Routes
 import fe.linksheet.navigation.SqlRoute
 import fe.linksheet.navigation.VlhAppRoute
 import fe.linksheet.navigation.aboutSettingsRoute
+import fe.linksheet.navigation.privacyPolicyRoute
 import fe.linksheet.navigation.amp2HtmlSettingsRoute
 import fe.linksheet.navigation.appsSettingsRoute
 import fe.linksheet.navigation.appsWhichCanOpenLinksSettingsRoute
@@ -256,6 +258,10 @@ fun MainNavHost(
 
         animatedComposable(route = creditsSettingsRoute) {
             CreditsSettingsRoute(onBackPressed = onBackPressed)
+        }
+
+        animatedComposable(route = privacyPolicyRoute) {
+            PrivacyPolicyRoute(onBackPressed = onBackPressed)
         }
 
         animatedComposable(route = preferredBrowserSettingsRoute) {

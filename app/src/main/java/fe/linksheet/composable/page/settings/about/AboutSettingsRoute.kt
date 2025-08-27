@@ -32,6 +32,7 @@ import fe.linksheet.R
 import fe.linksheet.composable.component.page.SaneScaffoldSettingsPage
 import fe.linksheet.module.viewmodel.AboutSettingsViewModel
 import fe.linksheet.navigation.creditsSettingsRoute
+import fe.linksheet.navigation.privacyPolicyRoute
 import fe.linksheet.util.LinkSheet
 import fe.linksheet.util.buildconfig.LinkSheetAppConfig
 import fe.linksheet.util.buildconfig.LinkSheetInfo
@@ -108,7 +109,7 @@ fun AboutSettingsRoute(
 
         divider(id = R.string.links)
 
-        group(size = 3) {
+        group(size = 5) {
             item(key = R.string.credits) { padding, shape ->
                 DefaultTwoLineIconClickableShapeListItem(
                     shape = shape,
@@ -139,6 +140,28 @@ fun AboutSettingsRoute(
                     supportingContent = textContent(R.string.discord_explainer),
                     icon = Icons.Outlined.Forum.iconPainter,
                     onClick = { uriHandler.openUri(BuildConfig.LINK_DISCORD) }
+                )
+            }
+
+            item(key = R.string.attribution) { padding, shape ->
+                DefaultTwoLineIconClickableShapeListItem(
+                    shape = shape,
+                    padding = padding,
+                    headlineContent = textContent(R.string.attribution),
+                    supportingContent = textContent(R.string.attribution),
+                    icon = Icons.Outlined.Info.iconPainter,
+                    onClick = { }
+                )
+            }
+
+            item(key = R.string.privacy_policy) { padding, shape ->
+                DefaultTwoLineIconClickableShapeListItem(
+                    shape = shape,
+                    padding = padding,
+                    headlineContent = textContent(R.string.privacy_policy),
+                    supportingContent = textContent(R.string.privacy_policy_explainer),
+                    icon = Icons.Outlined.PrivacyTip.iconPainter,
+                    onClick = { navigate(privacyPolicyRoute) }
                 )
             }
         }

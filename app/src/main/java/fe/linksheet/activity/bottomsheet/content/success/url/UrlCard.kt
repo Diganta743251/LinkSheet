@@ -126,7 +126,7 @@ fun UrlCard(
                     imageLoader = imageLoader,
                     alignment = Alignment.Center,
                     contentScale = ContentScale.FillWidth,
-                    contentDescription = ""
+                    contentDescription = stringResource(id = R.string.url_preview)
                 ) {
                     val state by painter.state.collectAsState()
                     when (state) {
@@ -177,7 +177,7 @@ fun UrlCard(
                         // favicon has type Any -> unfurler passed HttpUrl -> call toString to ensure coil can handle it
                         model = data.favicon.toString(),
                         imageLoader = imageLoader,
-                        contentDescription = ""
+                        contentDescription = stringResource(id = R.string.favicon)
                     ) {
                         val state by painter.state.collectAsState()
                         if (state is AsyncImagePainter.State.Success) {
