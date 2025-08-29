@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import androidx.compose.foundation.layout.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.outlined.EmojiEmotions
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
@@ -22,6 +24,7 @@ import androidx.compose.ui.viewinterop.AndroidView
 import androidx.core.widget.addTextChangedListener
 import fe.android.compose.system.rememberSystemService
 import fe.composekit.component.page.SaneSettingsScaffold
+import fe.linksheet.composable.util.BottomDrawer
 import fe.linksheet.R
 
 
@@ -41,6 +44,7 @@ fun TextEditorPage(
 
     var text by rememberSaveable { mutableStateOf(initialText) }
     val isValid = rememberSaveable(text) { validator.isValid(text) }
+    var showEmojiPicker by rememberSaveable { mutableStateOf(false) }
 
     val scrollBehavior = TopAppBarDefaults.pinnedScrollBehavior()
     SaneSettingsScaffold(
@@ -68,6 +72,68 @@ fun TextEditorPage(
                 initialText = text,
                 onTextChanged = { text = it }
             )
+
+            FloatingActionButton(
+                modifier = Modifier
+                    .align(Alignment.BottomEnd)
+                    .padding(16.dp),
+                onClick = {
+                    showEmojiPicker = true
+                }
+            ) {
+                Icon(imageVector = Icons.Outlined.EmojiEmotions, contentDescription = null)
+            }
+
+            if (showEmojiPicker) {
+                EmojiBottomSheet(
+                    onSelect = { emoji ->
+                        val editText = view.findFocus() as? EditText
+                        if (editText != null) {
+                            val start = editText.selectionStart.coerceAtLeast(0)
+                            val end = editText.selectionEnd.coerceAtLeast(0)
+                            val new = StringBuilder(editText.text.toString()).apply {
+                                replace(start, end, emoji)
+                            }.toString()
+                            editText.setText(new)
+                            val newPos = (start + emoji.length).coerceAtMost(new.length)
+                            editText.setSelection(newPos)
+                            onTextChanged(new)
+                        }
+                        showEmojiPicker = false
+                    },
+                    onDismiss = { showEmojiPicker = false }
+                )
+            }
+        }
+    }
+}
+
+@Composable
+private fun EmojiBottomSheet(onSelect: (String) -> Unit, onDismiss: () -> Unit) {
+    BottomDrawer(
+        hide = onDismiss,
+    ) {
+        val emojis = listOf(
+            "😀","😄","😁","😆","🥹","😊","😍","😎","🤩","🥳",
+            "😇","🙂","😉","😌","🤗","🤭","🤫","🤔","🤨","😐",
+            "😴","🤤","😪","😮","😯","😲","🥱","🤯","😳","🙄",
+            "😢","😭","😤","😠","😡","🤬","🤒","🤕","🤧","🤮",
+            "👍","👎","👏","🙌","🤝","🙏","💪","🫶","🫰","👌"
+        )
+        FlowRow(emojis, onSelect)
+    }
+}
+
+@Composable
+private fun FlowRow(items: List<String>, onSelect: (String) -> Unit) {
+    val chunk = 6
+    Column(modifier = Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+        for (row in items.chunked(chunk)) {
+            Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                for (emoji in row) {
+                    AssistChip(onClick = { onSelect(emoji) }, label = { Text(emoji) })
+                }
+            }
         }
     }
 }

@@ -13,5 +13,7 @@ class ThemeSettingsViewModel(
     val themeV2 = preferenceRepository.asViewModelState(AppPreferences.themeV2)
     val themeAmoled = preferenceRepository.asViewModelState(AppPreferences.themeAmoled)
     val themeMaterialYou = preferenceRepository.asViewModelState(AppPreferences.themeMaterialYou)
+    val themeAccentOverrideEnabled = preferenceRepository.asViewModelState(AppPreferences.themeAccentOverrideEnabled)
+    val themeAccentSeed = preferenceRepository.asViewModelState(AppPreferences.themeAccentSeed)
     val linkAssets = remoteConfigRepository.asViewModelState(RemoteConfigPreferences.linkAssets)
 }

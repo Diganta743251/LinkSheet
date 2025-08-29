@@ -301,6 +301,10 @@ dependencies {
     implementation(AndroidX.compose.animation)
     implementation(AndroidX.navigation.compose)
 
+    // Emoji2 support (bundled font to ensure consistent emoji rendering)
+    implementation("androidx.emoji2:emoji2:_")
+    implementation("androidx.emoji2:emoji2-bundled:_")
+
     implementation(AndroidX.lifecycle.process)
     implementation(AndroidX.lifecycle.runtime.compose)
     implementation(AndroidX.lifecycle.viewModelCompose)

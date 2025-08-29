@@ -337,6 +337,9 @@
     <string name="theme_mode">Theme mode</string>
     <string name="theme_enable_amoled_explainer">Use pure black theme if dark mode is enabled</string>
     <string name="theme_enable_material_you_explainer">Use Android 12+\'s Material You device theme</string>
+    <string name="theme_accent_color">Custom accent color</string>
+    <string name="theme_accent_color_explainer">Override primary color used across the app</string>
+    <string name="theme_accent_palette">Accent palette</string>
     <string name="tap_customization">Tap customization</string>
     <string name="tap_customization_single_tap">Single tap action</string>
     <string name="tap_customization_double_tap">Double tap action</string>
