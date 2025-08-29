@@ -318,6 +318,9 @@ dependencies {
 
     implementation(Google.android.material)
     implementation(Google.accompanist.permissions)
+    
+    // Play Store compliance: Offline emoji support
+    implementation("androidx.emoji2:emoji2-bundled:_")
 
     implementation(Koin.android)
     implementation(Koin.compose)
