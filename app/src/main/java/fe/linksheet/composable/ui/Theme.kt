@@ -108,8 +108,17 @@ fun AppTheme(
     val materialYou by themeSettingsViewModel.themeMaterialYou.collectAsStateWithLifecycle()
     val amoled by themeSettingsViewModel.themeAmoled.collectAsStateWithLifecycle()
 
-    val colorScheme = remember(themeV2, systemDarkTheme, materialYou, amoled) {
-        themeV2.getColorScheme(context, systemDarkTheme, materialYou, amoled)
+    val accentEnabled by themeSettingsViewModel.themeAccentOverrideEnabled.collectAsStateWithLifecycle()
+    val accentSeed by themeSettingsViewModel.themeAccentSeed.collectAsStateWithLifecycle()
+
+    val colorScheme = remember(themeV2, systemDarkTheme, materialYou, amoled, accentEnabled, accentSeed) {
+        val base = themeV2.getColorScheme(context, systemDarkTheme, materialYou, amoled)
+
+        if (!accentEnabled) base else base.copy(
+            primary = Color(accentSeed),
+            primaryContainer = Color(accentSeed).copy(alpha = 0.85f),
+            surfaceTint = Color(accentSeed),
+        )
     }
 
     if (edgeToEdge && updateEdgeToEdge != null) {

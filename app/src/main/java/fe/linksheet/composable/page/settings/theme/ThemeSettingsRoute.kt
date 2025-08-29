@@ -1,7 +1,17 @@
 package fe.linksheet.composable.page.settings.theme
 
+import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.res.stringResource
 import fe.android.compose.text.StringResourceContent.Companion.textContent
 import fe.composekit.component.ContentType
@@ -59,6 +69,57 @@ fun ThemeSettingsRoute(onBackPressed: () -> Unit, viewModel: ThemeSettingsViewMo
                     supportingContent = textContent(R.string.theme_enable_amoled_explainer)
                 )
             }
+
+            divider(id = R.string.theme_accent_color)
+
+            item(key = R.string.theme_accent_color) { padding, shape ->
+                PreferenceSwitchListItem(
+                    shape = shape,
+                    padding = padding,
+                    statePreference = viewModel.themeAccentOverrideEnabled,
+                    headlineContent = textContent(R.string.theme_accent_color),
+                    supportingContent = textContent(R.string.theme_accent_color_explainer)
+                )
+            }
+
+            item(key = R.string.theme_accent_palette) { padding, shape ->
+                val palette = listOf(
+                    0xFF6750A4, // Default seed
+                    0xFF6D28D9,
+                    0xFF2563EB,
+                    0xFF059669,
+                    0xFFEAB308,
+                    0xFFEA580C,
+                    0xFFDC2626
+                )
+
+                Row(
+                    modifier = Modifier
+                        .padding(padding)
+                        .clip(shape)
+                        .background(MaterialTheme.colorScheme.surface)
+                        .padding(horizontal = 16.dp, vertical = 12.dp),
+                    horizontalArrangement = Arrangement.spacedBy(12.dp)
+                ) {
+                    for (seed in palette) {
+                        ColorSwatch(color = Color(seed), onClick = { viewModel.themeAccentSeed.update(seed.toInt()) })
+                    }
+                }
+            }
         }
     }
+}
+
+@Composable
+private fun ColorSwatch(color: Color, onClick: () -> Unit) {
+    androidx.compose.foundation.Canvas(
+        modifier = Modifier
+            .clip(androidx.compose.foundation.shape.CircleShape)
+            .clickable(onClick = onClick)
+            .padding(vertical = 2.dp)
+            .then(Modifier.padding(end = 0.dp)),
+        onDraw = {
+            drawCircle(color = color, radius = size.minDimension / 2)
+        }
+    )
 }

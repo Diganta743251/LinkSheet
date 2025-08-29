@@ -135,6 +135,8 @@ object AppPreferences : PreferenceDefinition(
 
     val themeMaterialYou = boolean("theme_material_you", true)
     val themeAmoled = boolean("theme_amoled_enabled")
+    val themeAccentOverrideEnabled = boolean("theme_accent_override_enabled")
+    val themeAccentSeed = int("theme_accent_seed", 0x6750A4)
 
     val tapConfigSingle = mapped("tap_config_single", TapConfig.SelectItem, TapConfig)
     val tapConfigDouble = mapped("tap_config_double", TapConfig.OpenApp, TapConfig)
