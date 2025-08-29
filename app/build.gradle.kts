@@ -53,7 +53,7 @@ android {
     defaultConfig {
         applicationId = "fe.linksheet"
         minSdk = AndroidSdk.MIN_SDK
-        targetSdk = 34
+        targetSdk = 34 // targetSdk 34
         multiDexEnabled = true
 
         val now = System.currentTimeMillis()
