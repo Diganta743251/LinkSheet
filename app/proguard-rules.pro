@@ -120,3 +120,6 @@
 
 -printmapping mapping.txt
 -printusage usage.txt
+
+-keep class fe.linksheet.ui.** { *; }
+-keep class fe.linksheet.data.** { *; }
