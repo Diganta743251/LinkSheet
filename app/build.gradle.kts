@@ -72,7 +72,7 @@ android {
         val publicLocalProperties = rootProject.file("public.local.properties").readPropertiesOrNull()
 
         val supportedLocales = publicLocalProperties.getOrSystemEnv("SUPPORTED_LOCALES")?.split(",") ?: emptyList()
-        resourceConfigurations.addAll(supportedLocales)
+        androidResources.localeFilters.putAll(supportedLocales)
         tasks.register("createLocaleConfig") {
             val localeString = supportedLocales.joinToString(
                 separator = System.lineSeparator(),
@@ -162,6 +162,7 @@ android {
 
         release {
             isMinifyEnabled = true
+            isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro",
@@ -188,6 +189,7 @@ android {
             versionNameSuffix = "-release_debug"
 
             isDebuggable = true
+            isMinifyEnabled = false
 
             resValue("string", "app_name", "$appName Release Debug")
         }
