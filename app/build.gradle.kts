@@ -48,12 +48,13 @@ val dtf: DateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH_mm_ss"
 
 android {
     namespace = "fe.linksheet"
-    compileSdk = AndroidSdk.COMPILE_SDK
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "fe.linksheet"
         minSdk = AndroidSdk.MIN_SDK
-        targetSdk = AndroidSdk.COMPILE_SDK
+        targetSdk = 34
+        multiDexEnabled = true
 
         val now = System.currentTimeMillis()
         val provider = AndroidVersionStrategy(now)
@@ -162,6 +163,7 @@ android {
 
         release {
             isMinifyEnabled = true
+            shrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro",
