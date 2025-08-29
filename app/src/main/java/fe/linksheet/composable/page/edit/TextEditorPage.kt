@@ -97,7 +97,8 @@ fun TextEditorPage(
                             editText.setText(new)
                             val newPos = (start + emoji.length).coerceAtMost(new.length)
                             editText.setSelection(newPos)
-                            onTextChanged(new)
+                            // Update our Compose state too
+                            text = new
                         }
                         showEmojiPicker = false
                     },
@@ -108,6 +109,7 @@ fun TextEditorPage(
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun EmojiBottomSheet(onSelect: (String) -> Unit, onDismiss: () -> Unit) {
     BottomDrawer(
